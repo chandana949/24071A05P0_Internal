@@ -35,7 +35,6 @@ public class StudentCRUD {
         sc.close();
     }
 
-    // CREATE TABLE
     public static void createTable() {
         try (Connection con = DriverManager.getConnection(URL, USER, PASSWORD)) {
 
@@ -56,7 +55,6 @@ public class StudentCRUD {
         }
     }
 
-    // CREATE
     public static void createStudent(Scanner sc) {
         try (Connection con = DriverManager.getConnection(URL, USER, PASSWORD)) {
 
@@ -84,7 +82,6 @@ public class StudentCRUD {
         }
     }
 
-    // READ
     public static void readStudents() {
         try (Connection con = DriverManager.getConnection(URL, USER, PASSWORD)) {
 
@@ -106,7 +103,6 @@ public class StudentCRUD {
         }
     }
 
-    // UPDATE
     public static void updateStudent(Scanner sc) {
         try (Connection con = DriverManager.getConnection(URL, USER, PASSWORD)) {
 
@@ -131,7 +127,6 @@ public class StudentCRUD {
         }
     }
 
-    // DELETE
     public static void deleteStudent(Scanner sc) {
         try (Connection con = DriverManager.getConnection(URL, USER, PASSWORD)) {
 
